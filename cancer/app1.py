@@ -63,11 +63,16 @@ st.write(f'The accuracy of the model on the test set is: {accuracy:.2f}')
 st.subheader('Classification Report:')
 st.text(classification_report(y_test, y_pred))
 
+
+
+
 # Pair plot for data exploration
 st.subheader('Pair Plot:')
 fig, ax = plt.subplots()
 sns.pairplot(X_pairplot, hue='target', height=2)
 st.pyplot(fig)
+
+
 
 # Confusion Matrix
 st.subheader('Confusion Matrix:')
